@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sourabhdhingra</title>
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="colorful.css">
+    <!-- <link rel="stylesheet" href="light.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Raleway', sans-serif;">
+    <!-- scripts -->
+    <script src="transition-effects.js"></script>
+    
+    <div class="container content prevent-select">
+        <div class="option-circle option-1">
+            <p>About me!</p>
+        </div>
+        <div class="option-circle option-2">
+            <p>My work-ex!</p>
+        </div>
+        <div class="outer-circle tooltip">
+            <div class="inner-circle tooltip" onclick="toggleOptions()">
+                <span class="tooltiptext">Clicking on the inner disc would expand out the available options.</span>
+                <p style="font-size: 30px; font-weight: bolder;">Welcome!</p>
+                <p style="font-size: 20px;font-weight: bold;">Click here to know more!</p>
+            </div>
+            <span class="tooltiptext">Clicking the outer disc button will help you navigate back!</span>
+            <p>Click here to go back!</p>
+        </div>
+        <div class="option-circle option-3">
+            <p>My gigs!</p>
+        </div>
+        <div class="option-circle option-4">
+            <p>What I can offer?</p>
+        </div>
+    </div>
+</body>
+</html>

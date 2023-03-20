@@ -1,0 +1,19 @@
+:root {
+    /* body color properties */
+    --body-bg: #FDCA40;
+
+    /* inner circle color properties */
+    --inner-circle: #FF8C00;
+    --inner-circle-pressed-hover: #c4720e;
+    --inner-circle-shadow-released: #277FCA;
+    --inner-circle-shadow-pressed: #1e64a2;
+
+    /* outer circle color properties */
+    --outer-circle: #33A1FD;
+    --outer-circle-pressed-hover: #2d7fc3;
+    --outer-circle-shadow-released: #CAA131;
+    --outer-circle-shadow-pressed: #ae8b2a;
+
+    /* option circle color properties */
+    --option-circle-border: #E6E6E6
+}

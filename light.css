@@ -1,0 +1,19 @@
+:root {
+    /* body color properties */
+    --body-bg: white;
+
+    /* inner circle color properties */
+    --inner-circle: bisque;
+    --inner-circle-pressed-hover: rgb(249, 192, 123);
+    --inner-circle-shadow-released: gainsboro;
+    --inner-circle-shadow-pressed: rgb(249, 192, 123);;
+
+    /* outer circle color properties */
+    --outer-circle: aliceblue;
+    --outer-circle-pressed-hover: rgb(224, 231, 237);
+    --outer-circle-shadow-released: gainsboro;
+    --outer-circle-shadow-pressed: rgb(187, 185, 185);
+
+    /* option circle color properties */
+    --option-circle-border: azure
+}
