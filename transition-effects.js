@@ -1,7 +1,28 @@
+let optionsCollapsed = true; // default state
+
 function toggleOptions() {
-    document.querySelector('.option-1').style.animation = "smooth-show-option-1 1s ease-in 1s forwards";
-    document.querySelector('.option-2').style.animation = "smooth-show-option-2 1s ease-in 1s forwards";
-    document.querySelector('.option-3').style.animation = "smooth-show-option-3 1s ease-in 1s forwards";
-    document.querySelector('.option-4').style.animation = "smooth-show-option-4 1s ease-in 1s forwards";
-    // write code here to clear the text Click here to know more
+    if (optionsCollapsed) {
+        document.querySelector('.option-1').style.animation = "smooth-show-option-1 0.2s ease-in 1s forwards";
+        document.querySelector('.option-2').style.animation = "smooth-show-option-2 0.2s ease-in 1s forwards";
+        document.querySelector('.option-3').style.animation = "smooth-show-option-3 0.2s ease-in 1s forwards";
+        document.querySelector('.option-4').style.animation = "smooth-show-option-4 0.2s ease-in 1s forwards";
+        // write code here to clear the text Click here to know more
+        changeInnerDiscContent("Choose one!", "")
+        optionsCollapsed = false;
+    }
+    else {
+        document.querySelector('.option-1').style.animation = "smooth-show-option-1 0.2s ease-in 1s backwards";
+        document.querySelector('.option-2').style.animation = "smooth-show-option-2 0.2s ease-in 1s backwards";
+        document.querySelector('.option-3').style.animation = "smooth-show-option-3 0.2s ease-in 1s backwards";
+        document.querySelector('.option-4').style.animation = "smooth-show-option-4 0.2s ease-in 1s backwards";
+        // write code here to clear the text Click here to know more
+        changeInnerDiscContent("Welcome!", "Click here to know more!")
+        optionsCollapsed = true;
+    }
+}
+
+function changeInnerDiscContent(p1, p2) {
+    const innerCircleElements = document.querySelector('.inner-circle').children;
+    innerCircleElements[1].innerHTML = p1;
+    innerCircleElements[2].innerHTML = p2;
 }
