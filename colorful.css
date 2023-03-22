@@ -15,5 +15,8 @@
     --outer-circle-shadow-pressed: #ae8b2a;
 
     /* option circle color properties */
-    --option-circle-border: #E6E6E6
+    --option-circle-border: #E6E6E6;
+
+    /* connecting line color properties */
+    --connecting-line: #FFFFFF;
 }

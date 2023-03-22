@@ -15,5 +15,8 @@
     --outer-circle-shadow-pressed: rgb(187, 185, 185);
 
     /* option circle color properties */
-    --option-circle-border: azure
+    --option-circle-border: azure;
+
+    /* connecting line color properties */
+    --connecting-line: azure;
 }

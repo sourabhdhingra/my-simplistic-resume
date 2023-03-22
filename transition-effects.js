@@ -6,8 +6,10 @@ function toggleOptions() {
         document.querySelector('.option-2').style.animation = "smooth-show-option-2 0.2s ease-in 1s forwards";
         document.querySelector('.option-3').style.animation = "smooth-show-option-3 0.2s ease-in 1s forwards";
         document.querySelector('.option-4').style.animation = "smooth-show-option-4 0.2s ease-in 1s forwards";
-        // write code here to clear the text Click here to know more
         changeInnerDiscContent("Choose one!", "")
+        document.querySelectorAll(".line").forEach(element => {
+            element.style.visibility = "visible";
+        });
         optionsCollapsed = false;
     }
     else {
@@ -15,8 +17,10 @@ function toggleOptions() {
         document.querySelector('.option-2').style.animation = "smooth-show-option-2 0.2s ease-in 1s backwards";
         document.querySelector('.option-3').style.animation = "smooth-show-option-3 0.2s ease-in 1s backwards";
         document.querySelector('.option-4').style.animation = "smooth-show-option-4 0.2s ease-in 1s backwards";
-        // write code here to clear the text Click here to know more
         changeInnerDiscContent("Welcome!", "Click here to know more!")
+        document.querySelectorAll(".line").forEach(element => {
+            element.style.visibility = "hidden";
+        });
         optionsCollapsed = true;
     }
 }

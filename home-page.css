@@ -10,9 +10,10 @@
 .line {
     width: 300px;
     height: 47px;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid var(--connecting-line);
     position: absolute;
     z-index: -1;
+    visibility: hidden;
 }
 
 .line1 {

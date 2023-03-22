@@ -1,0 +1,48 @@
+{
+    "index" : {
+        "inner-circle": {
+            "p1": "Welcome!",
+            "p2" : "Click here to know more!"
+        },
+        "outer-circle": {
+            "p": "Click here to go back!"
+        },
+        "option-circles": {
+            "option-circle-1": {
+                "p": "About me!"
+            },
+            "option-circle-2": {
+                "p": "My work-ex!"
+            },
+            "option-circle-3": {
+                "p": "My gigs!"
+            },
+            "option-circle-4": {
+                "p": "What I can offer?"
+            }
+        }
+    },
+    "aboutMe" : {
+        "inner-circle": {
+            "p1" : "About me!",
+            "p2": ""
+        },
+        "outer-circle": {
+            "p": "Click here to go back!"
+        },
+        "option-circles": {
+            "option-circle-1": {
+                "p": "My short Bio!"
+            },
+            "option-circle-2": {
+                "p": "My aualifications!"
+            },
+            "option-circle-3": {
+                "p": "My interests!"
+            },
+            "option-circle-4": {
+                "p": "Let's get in touch!"
+            }
+        }
+    }
+}

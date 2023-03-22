@@ -13,13 +13,10 @@
 </head>
 <body style="font-family: 'Raleway', sans-serif;">
     <!-- scripts -->
-    <script src="transition-effects.js"></script>
-    
-    <div class="container content prevent-select">
-        <div class="option-circle option-1">
-            <p>About me!</p>
-        </div>
-
+    <script src="transition-effects.js" type="text/javascript"></script>
+    <script src="template-engine.js" type="module"></script>
+ 
+    <div class="container content prevent-select" id="index">
         <!-- line to connect option 1 to outer circle -->
         <div class="line line1"></div> 
         <!-- line to connect option 2 to outer circle -->
@@ -28,25 +25,36 @@
         <div class="line line3"></div>
         <!-- line to connect option 4 to outer circle -->
         <div class="line line4"></div>
-        
-        <div class="option-circle option-2">
-            <p>My work-ex!</p>
+
+        <!-- option circles, outer and inner -->
+        <div class="option-circle option-1">
+            <p>${{}['option-circles']['option-circle-1'].p}</p>
         </div>
+
+        <div class="option-circle option-2">
+            <p>${{}['option-circles']['option-circle-2'].p}</p>
+        </div>
+
         <div class="outer-circle tooltip">
             <div class="inner-circle tooltip" onclick="toggleOptions()">
                 <span class="tooltiptext">Clicking on the inner disc would expand out the available options.</span>
-                <p style="font-size: 30px; font-weight: bolder;">Welcome!</p>
-                <p style="font-size: 20px;font-weight: bold;">Click here to know more!</p>
+                <p style="font-size: 30px; font-weight: bolder;">${{}['inner-circle'].p1}</p>
+                <p style="font-size: 20px;font-weight: bold;">${{}['inner-circle'].p2}</p>
             </div>
             <span class="tooltiptext">Clicking the outer disc button will help you navigate back!</span>
-            <p>Click here to go back!</p>
+            <p>${{}['outer-circle'].p}</p>
         </div>
+
         <div class="option-circle option-3">
-            <p>My gigs!</p>
+            <p>${{}['option-circles']['option-circle-3'].p}</p>
         </div>
+
         <div class="option-circle option-4">
-            <p>What I can offer?</p>
+            <p>${{}['option-circles']['option-circle-4'].p}</p>
         </div>
+
+        <!-- experiment -->
+        <div id="experiment"></div>
     </div>
 </body>
 </html>
