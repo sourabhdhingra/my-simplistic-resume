@@ -30,3 +30,5 @@ function changeInnerDiscContent(p1, p2) {
     innerCircleElements[1].innerHTML = p1;
     innerCircleElements[2].innerHTML = p2;
 }
+
+

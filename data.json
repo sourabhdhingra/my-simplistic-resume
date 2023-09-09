@@ -22,10 +22,10 @@
             }
         }
     },
-    "aboutMe" : {
+    "About me!" : {
         "inner-circle": {
             "p1" : "About me!",
-            "p2": ""
+            "p2": "I am a tech enthusiast interested in buiding Web Applications!"
         },
         "outer-circle": {
             "p": "Click here to go back!"
@@ -35,7 +35,7 @@
                 "p": "My short Bio!"
             },
             "option-circle-2": {
-                "p": "My aualifications!"
+                "p": "My Qualifications!"
             },
             "option-circle-3": {
                 "p": "My interests!"
