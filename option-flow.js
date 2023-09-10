@@ -1,10 +1,22 @@
 import data from './data.json' assert { type: 'json' };
 
 
-let option1 = document.querySelector('.option-1');
-option1.addEventListener('click', function() {
+let options = document.querySelectorAll('.option-circle');
+let option1 = options[0];
+let option2 = options[1];
+let option3 = options[2];
+let option4 = options[3];
+
+function updateOptions() {
     let key = this.firstElementChild.textContent;
-    console.log(data[key]['inner-circle']['p1']);
+    // check if key exists in Json, if not perform nothing
+    if(key in data) {
+        console.log(data[key]['inner-circle']['p1']);
+    }
+    else {
+        throw Error(`option ${key} does not have any further categories!`)
+        return;
+    }
     let parentDiv = document.getElementById('parent');
     // update inner circle p1
     parentDiv.getElementsByClassName('inner-circle')[0]
@@ -36,4 +48,9 @@ option1.addEventListener('click', function() {
     .getElementsByTagName('p')[0]
     .textContent = data[key]['option-circles']['option-circle-4']['p'];
     
-});
+}
+
+option1.addEventListener('click', updateOptions);
+option2.addEventListener('click', updateOptions);
+option3.addEventListener('click', updateOptions);
+option4.addEventListener('click', updateOptions);

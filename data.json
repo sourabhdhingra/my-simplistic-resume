@@ -44,5 +44,28 @@
                 "p": "Let's get in touch!"
             }
         }
+    },
+    "My work-ex!" : {
+        "inner-circle": {
+            "p1" : "My work-ex!",
+            "p2": "I have ten years of work-ex as a Software Developer in building test automation frameworks and testing utilities."
+        },
+        "outer-circle": {
+            "p": "Click here to go back!"
+        },
+        "option-circles": {
+            "option-circle-1": {
+                "p": "GoTo Financial"
+            },
+            "option-circle-2": {
+                "p": "TestVagrant"
+            },
+            "option-circle-3": {
+                "p": "Genpact Headstrong"
+            },
+            "option-circle-4": {
+                "p": "Three Pillar Global"
+            }
+        }
     }
 }
