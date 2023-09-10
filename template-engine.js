@@ -20,3 +20,4 @@ function loadContent(pageKey='index') {
 }
 
 window.onload = loadContent();
+document.querySelector('.inner-circle').addEventListener('click', toggleOptions);
