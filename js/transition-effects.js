@@ -6,8 +6,8 @@ function toggleOptions(event) {
 
 
     function changeInnerDiscContent(innerCircle, p1, p2) {
-        innerCircle[0].textContent = p1;
-        innerCircle[1].textContent = p2;
+        // innerCircle[0].textContent = p1;
+        // innerCircle[1].textContent = p2;
     }
 
     if (optionsCollapsed) {

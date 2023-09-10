@@ -1,6 +1,6 @@
-import { loadContent } from "./js/template-engine.js";
-import { toggleOptions } from './js/transition-effects.js';
-import { updateOptionsHandler, goBackHandler } from "./js/option-flow.js";
+import { loadContent } from "./template-engine.js";
+import { toggleOptions } from './transition-effects.js';
+import { updateOptionsHandler, goBackHandler } from "./option-flow.js";
 
 
 window.onload = loadContent();
