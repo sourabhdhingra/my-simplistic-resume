@@ -1,6 +1,6 @@
 let optionsCollapsed = true; // default state
 
-function toggleOptions() {
+function toggleOptions(event) {
 
     let innerCircle = document.getElementsByClassName('inner-circle')[0].getElementsByTagName('p');
 
@@ -32,6 +32,7 @@ function toggleOptions() {
         });
         optionsCollapsed = true;
     }
+    event.stopPropagation();
 }
 
 
