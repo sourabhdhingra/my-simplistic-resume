@@ -35,4 +35,4 @@ function toggleOptions(event) {
     event.stopPropagation();
 }
 
-
+export {toggleOptions}

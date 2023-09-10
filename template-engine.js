@@ -19,5 +19,5 @@ function loadContent(pageKey='index') {
     mainConent.innerHTML = eval('`'+htmlText+'`');
 }
 
-window.onload = loadContent();
-document.querySelector('.inner-circle').addEventListener('click', toggleOptions);
+
+export {loadContent}
