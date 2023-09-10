@@ -1,4 +1,4 @@
-import data from './data.json' assert { type: 'json' };
+import data from '../data.json' assert { type: 'json' };
 
 /*
 Function to render template based upon the page key passed
