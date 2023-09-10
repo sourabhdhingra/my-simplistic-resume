@@ -1,21 +1,37 @@
 import data from './data.json' assert { type: 'json' };
 
 
+let optionStack = ['index'];
 let options = document.querySelectorAll('.option-circle');
 let option1 = options[0];
 let option2 = options[1];
 let option3 = options[2];
 let option4 = options[3];
+let goBackDisc = document.querySelector('.outer-circle');
 
-function updateOptions() {
+function updateOptionsHandler(event) {
     let key = this.firstElementChild.textContent;
+    console.log(`updateOptionsHandler: before page stack = ${optionStack}`);
+    try{
+        updateOptions(key);
+        optionStack.push(key);
+
+    }
+    catch(error) {
+        throw error;
+    }
+    finally {
+        console.log(`updateOptionsHandler: after page stack = ${optionStack}`);
+    }
+}
+
+function updateOptions(key) {
     // check if key exists in Json, if not perform nothing
     if(key in data) {
-        console.log(data[key]['inner-circle']['p1']);
+        console.log(`key ${data[key]['inner-circle']['p1']} value= ${data[key]['inner-circle']['p1']}`);
     }
     else {
         throw Error(`option ${key} does not have any further categories!`)
-        return;
     }
     let parentDiv = document.getElementById('parent');
     // update inner circle p1
@@ -50,7 +66,29 @@ function updateOptions() {
     
 }
 
-option1.addEventListener('click', updateOptions);
-option2.addEventListener('click', updateOptions);
-option3.addEventListener('click', updateOptions);
-option4.addEventListener('click', updateOptions);
+function goBackHandler() {
+    console.log(`goBackHandler: before page stack = ${optionStack}`);
+    try {
+        if(optionStack.length > 1) {
+            console.log('inside goBackHandler');
+            let key = optionStack.pop();
+            console.log(`removed ${key}`);
+            updateOptions(optionStack[optionStack.length-1]);
+        }
+        else {
+            throw Error('Nothing to go back!');
+        }
+    } catch(error) {
+        throw error;
+    }
+    finally {
+        console.log(`goBackHandler: after page stack = ${optionStack}`);
+    }
+
+}
+
+option1.addEventListener('click', updateOptionsHandler);
+option2.addEventListener('click', updateOptionsHandler);
+option3.addEventListener('click', updateOptionsHandler);
+option4.addEventListener('click', updateOptionsHandler);
+goBackDisc.addEventListener('click', goBackHandler);

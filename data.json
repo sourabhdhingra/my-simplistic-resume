@@ -67,5 +67,28 @@
                 "p": "Three Pillar Global"
             }
         }
+    },
+    "My short Bio!" : {
+        "inner-circle": {
+            "p1" : "My short Bio!",
+            "p2": "I completed my graduation in 2013 in Computer Science and started as a Software Engineer Intern."
+        },
+        "outer-circle": {
+            "p": "Click here to go back!"
+        },
+        "option-circles": {
+            "option-circle-1": {
+                "p": "DummyBio1"
+            },
+            "option-circle-2": {
+                "p": "DummyBio2"
+            },
+            "option-circle-3": {
+                "p": "DummyBio3"
+            },
+            "option-circle-4": {
+                "p": "DummyBio4"
+            }
+        }
     }
 }
