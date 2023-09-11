@@ -24,11 +24,11 @@ function setUserTheme() {
     const value = localStorage.getItem("theme-switcher");
     if(value === 'checked') {
         document.getElementById("theme-switcher").checked = true;
-        document.querySelector('#theme').setAttribute('href', 'colorful.css');
+        document.querySelector('#theme').setAttribute('href', 'css/colorful.css');
     }
     else {
         document.getElementById("theme-switcher").checked = false;
-        document.querySelector('#theme').setAttribute('href', 'light.css');
+        document.querySelector('#theme').setAttribute('href', 'css/light.css');
     }
 }
 
