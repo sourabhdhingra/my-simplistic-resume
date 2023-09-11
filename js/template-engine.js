@@ -15,7 +15,7 @@ function replacePageKeys(pageKey='index', content) {
 
 function loadContent(pageKey='index') {
     let mainConent = document.getElementById("parent");
-    let htmlText = JSON.stringify(replacePageKeys(pageKey, mainConent.innerHTML));
+    let htmlText = replacePageKeys(pageKey, mainConent.innerHTML);
     mainConent.innerHTML = eval('`'+htmlText+'`');
 }
 
