@@ -17,6 +17,19 @@ function loadContent(pageKey='index') {
     let mainConent = document.getElementById("parent");
     let htmlText = replacePageKeys(pageKey, mainConent.innerHTML);
     mainConent.innerHTML = eval('`'+htmlText+'`');
+    setUserTheme();
+}
+
+function setUserTheme() {
+    const value = localStorage.getItem("theme-switcher");
+    if(value === 'checked') {
+        document.getElementById("theme-switcher").checked = true;
+        document.querySelector('#theme').setAttribute('href', 'colorful.css');
+    }
+    else {
+        document.getElementById("theme-switcher").checked = false;
+        document.querySelector('#theme').setAttribute('href', 'light.css');
+    }
 }
 
 
