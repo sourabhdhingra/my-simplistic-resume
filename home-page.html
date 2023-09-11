@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>sourabhdhingra</title>
     <link rel="stylesheet" href="home-page.css">
-    <link rel="stylesheet" href="colorful.css">
-    <!-- <link rel="stylesheet" href="light.css"> -->
+    <link rel="stylesheet" href="colorful.css" id="theme">
+    <link rel="stylesheet" href="theme-switcher.css">
     <script src="js/app.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,14 @@
 </head>
 
 <body style="font-family: 'Raleway', sans-serif;">
+    <div style="float: right;">
+        <label class="switch">
+            <input type="checkbox" checked id="theme-switcher">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    
+      
     <div class="container content prevent-select" id="parent">
         <!-- line to connect option 1 to outer circle -->
         <div class="line line1"></div>
