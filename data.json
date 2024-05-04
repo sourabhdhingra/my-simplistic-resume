@@ -25,7 +25,7 @@
     "About me!" : {
         "inner-circle": {
             "p1" : "About me!",
-            "p2": "I am a tech enthusiast interested in buiding Web Applications!"
+            "p2": "I am a tech enthusiast interested in buiding Web Applications and automated test solutions!"
         },
         "outer-circle": {
             "p": "Click here to go back!"
@@ -48,7 +48,7 @@
     "My work-ex!" : {
         "inner-circle": {
             "p1" : "My work-ex!",
-            "p2": "I have ten years of work-ex as a Software Developer in building test automation frameworks and testing utilities."
+            "p2": "I have ten years+ of work-ex as a Software Developer in building test automation frameworks and testing utilities."
         },
         "outer-circle": {
             "p": "Click here to go back!"
@@ -78,16 +78,85 @@
         },
         "option-circles": {
             "option-circle-1": {
-                "p": "DummyBio1"
+                "p": "Learned Java and C++ as intern."
             },
             "option-circle-2": {
-                "p": "DummyBio2"
+                "p": "Web Automation using Java, Selenium and TestNG"
             },
             "option-circle-3": {
-                "p": "DummyBio3"
+                "p": "Started as QA Engineer for NCR client"
             },
             "option-circle-4": {
-                "p": "DummyBio4"
+                "p": "Learned the business and requirement analysis"
+            }
+        }
+    },
+    "My Qualifications!" : {
+        "inner-circle": {
+            "p1" : "Qualifications!",
+            "p2": "As a seasoned professional I have acquired varied skillsets and qualities."
+        },
+        "outer-circle": {
+            "p": "Click here to go back!"
+        },
+        "option-circles": {
+            "option-circle-1": {
+                "p": "Polyglot - proficiency in Java, Python & Javascript."
+            },
+            "option-circle-2": {
+                "p": "UI Automation"
+            },
+            "option-circle-3": {
+                "p": "Back-end Automation (inlcuding but not limited to Rest API)"
+            },
+            "option-circle-4": {
+                "p": "Comprehensive Quality Assurance with Lean Left focus"
+            }
+        }
+    },
+    "My interests!" : {
+        "inner-circle": {
+            "p1" : "My interests!",
+            "p2": "I have keen interest in deploying my software development skills in test automation and quality assurance."
+        },
+        "outer-circle": {
+            "p": "Click here to go back!"
+        },
+        "option-circles": {
+            "option-circle-1": {
+                "p": "Building and maintaining robust automated test suites."
+            },
+            "option-circle-2": {
+                "p": "Developing high-quality, efficient, and maintainable code."
+            },
+            "option-circle-3": {
+                "p": "Trying out new testing tools and technologies to stay up-to-date."
+            },
+            "option-circle-4": {
+                "p": "Deeply understanding product and it's business."
+            }
+        }
+    },
+    "Let's get in touch!" : {
+        "inner-circle": {
+            "p1" : "Let's connect!",
+            "p2": "I would love to get in touch for any QA consulting needs or oppurtunities."
+        },
+        "outer-circle": {
+            "p": "Click here to go back!"
+        },
+        "option-circles": {
+            "option-circle-1": {
+                "p": "sourabhdhingra91@gmail.com"
+            },
+            "option-circle-2": {
+                "p": "Via linkedin: https://www.linkedin.com/in/sourabhdhingra91/"
+            },
+            "option-circle-3": {
+                "p": "Phone No. +919971586655"
+            },
+            "option-circle-4": {
+                "p": "WhatsApp - +919971586655"
             }
         }
     }
