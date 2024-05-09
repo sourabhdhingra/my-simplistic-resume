@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sourabhdhingra</title>
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/colorful.css" id="theme">
+    <link rel="stylesheet" href="css/theme-switcher.css">
+    <script src="js/app.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Raleway', sans-serif;">
+    <div style="float: right;">
+        <label class="switch">
+            <input type="checkbox" checked id="theme-switcher">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    
+      
+    <div class="container content prevent-select" id="parent">
+        <!-- line to connect option 1 to outer circle -->
+        <div class="line line1"></div>
+        <!-- line to connect option 2 to outer circle -->
+        <div class="line line2"></div>
+        <!-- line to connect option 3 to outer circle -->
+        <div class="line line3"></div>
+        <!-- line to connect option 4 to outer circle -->
+        <div class="line line4"></div>
+
+        <!-- option circles, outer and inner -->
+        <div class="option-circle option-1">
+            <p>${{}['option-circles']['option-circle-1'].p}</p>
+        </div>
+
+        <div class="option-circle option-2">
+            <p>${{}['option-circles']['option-circle-2'].p}</p>
+        </div>
+
+        <div class="outer-circle tooltip">
+            <div class="inner-circle tooltip">
+                <span class="tooltiptext">Clicking on the inner disc would expand out the available options.</span>
+                <p style="font-size: 30px; font-weight: bolder;">${{}['inner-circle'].p1}</p>
+                <p style="font-size: 20px;font-weight: bold;">${{}['inner-circle'].p2}</p>
+            </div>
+            <span class="tooltiptext">Clicking the outer disc button will help you navigate back!</span>
+            <p>${{}['outer-circle'].p}</p>
+        </div>
+
+        <div class="option-circle option-3">
+            <p>${{}['option-circles']['option-circle-3'].p}</p>
+        </div>
+
+        <div class="option-circle option-4">
+            <p>${{}['option-circles']['option-circle-4'].p}</p>
+        </div>
+
+        <!-- experiment -->
+        <div id="experiment"></div>
+    </div>
+</body>
+
+</html>
