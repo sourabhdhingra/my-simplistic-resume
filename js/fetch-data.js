@@ -1,5 +1,5 @@
 function getJsonData() {
-    return fetch('../data.json')
+    return fetch('https://sourabhdhingra.github.io/my-simplistic-resume/data.json')
     .then(response => {
       console.log(response.headers.get('Content-Type'));
       return response.json();
