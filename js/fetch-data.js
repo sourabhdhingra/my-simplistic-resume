@@ -1,6 +1,9 @@
 function getJsonData() {
     return fetch('../data.json')
-    .then(response => response.json())
+    .then(response => {
+      console.log(response.headers.get('Content-Type'));
+      return response.json();
+    })
     .catch(error => {
       console.error('Error fetching data:', error);
       throw error;
