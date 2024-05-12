@@ -1,4 +1,4 @@
-# My Simpilistic Intearactive Resume
+# My Simpilistic Interactive Resume
 
 This is a project I started to learn basics of Web Development using vanilla JS, HTML and CSS. While buidling the project I have tried to achieve UI/UX design principles in terms of colors of choice, intuitive interaction, JS and CSS transition effects. Additionally I tried to achieve what could be called conceptually closer to Single Page Application with a fixed frontend and data being updated from a json file upon user interaction.
 
@@ -8,7 +8,7 @@ The project is not deployed yet as a functioning website. In order to run the pr
 
 **Check the gif below to have a glimpse**
 
-![Demo](resources/resume-website-demo.gif)
+![Demo](resources/resume-demo.gif)
 
 ## Core Insights and Functioning about the project
 
