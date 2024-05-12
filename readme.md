@@ -2,6 +2,8 @@
 
 This is a project I started to learn basics of Web Development using vanilla JS, HTML and CSS. While buidling the project I have tried to achieve UI/UX design principles in terms of colors of choice, intuitive interaction, JS and CSS transition effects. Additionally I tried to achieve what could be called conceptually closer to Single Page Application with a fixed frontend and data being updated from a json file upon user interaction.
 
+You can access the website at https://sourabhdhingra.github.io/my-simplistic-resume
+
 ## How to run this project?
 
 The project is not deployed yet as a functioning website. In order to run the project and see what I build download the Github repo, open in VS code and use VS code live server extension to run the home-page.html and interact with it. The project is not yet optimized for Mobile and should be run only desktop devices.
