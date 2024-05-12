@@ -1,7 +1,6 @@
 let optionsCollapsed = true; // default state
 
 function toggleOptions(event) {
-
     if (optionsCollapsed) {
         document.querySelector('.option-1').style.animation = "smooth-show-option-1 0.2s ease-in 1s forwards";
         document.querySelector('.option-2').style.animation = "smooth-show-option-2 0.2s ease-in 1s forwards";

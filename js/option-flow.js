@@ -1,4 +1,4 @@
-import data from '../data.json' with { type: 'json' };
+import { populateData, data } from './fetch-data.js';
 
 
 let optionStack = ['index'];
